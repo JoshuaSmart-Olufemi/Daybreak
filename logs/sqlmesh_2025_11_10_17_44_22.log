@@ -1,0 +1,114 @@
+2025-11-10 17:44:22,805 - MainThread - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1 (main.py:27)
+2025-11-10 17:44:28,050 - MainThread - sqlmesh.core.config.connection - INFO - Creating new DuckDB adapter for data files: {'md:analytics?motherduck_token=*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************'} (connection.py:489)
+2025-11-10 17:44:49,174 - MainThread - sqlmesh.core.config.connection - INFO - Creating new DuckDB adapter for in-memory database (connection.py:491)
+2025-11-10 17:44:49,177 - ThreadPoolExecutor-0_0 - sqlmesh.core.console - WARNING - Model '"analytics"."sqlmesh_example"."full_model"' was not found at /mnt/c/Users/josh/Daybreak/tests/test_full_model.yaml (console.py:2260)
+2025-11-10 17:44:49,181 - MainThread - sqlmesh.core.config.connection - INFO - Using existing DuckDB adapter due to overlapping data file: md:analytics?motherduck_token=************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************* (connection.py:479)
+2025-11-10 17:44:49,182 - MainThread - sqlmesh.core.console - WARNING - The motherduck engine is not recommended for storing SQLMesh state in production deployments. Please see https://sqlmesh.readthedocs.io/en/stable/guides/configuration/#state-connection for a list of recommended engines and more information. (console.py:2260)
+2025-11-10 17:51:31,579 - MainThread - sqlmesh.core.plan.evaluator - INFO - Evaluating plan stage CreateSnapshotRecordsStage (evaluator.py:125)
+2025-11-10 17:51:34,379 - MainThread - sqlmesh.core.plan.evaluator - INFO - Evaluating plan stage PhysicalLayerSchemaCreationStage (evaluator.py:125)
+2025-11-10 17:51:34,381 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Creating schema 'sqlmesh__default' (evaluator.py:1360)
+2025-11-10 17:51:34,383 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 318301b6d5e64435bc2399fd6dd11147 */ CREATE SCHEMA IF NOT EXISTS "sqlmesh__default" (base.py:2466)
+2025-11-10 17:51:34,890 - MainThread - sqlmesh.core.plan.evaluator - INFO - Evaluating plan stage BackfillStage (evaluator.py:125)
+2025-11-10 17:51:34,894 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Listing data objects in schema sqlmesh__default (evaluator.py:1463)
+2025-11-10 17:51:34,895 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 318301b6d5e64435bc2399fd6dd11147 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-11-10 17:51:34,902 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 318301b6d5e64435bc2399fd6dd11147 */ SELECT
+  table_name AS name,
+  table_schema AS schema,
+  CASE table_type
+    WHEN 'BASE TABLE'
+    THEN 'table'
+    WHEN 'VIEW'
+    THEN 'view'
+    WHEN 'LOCAL TEMPORARY'
+    THEN 'table'
+  END AS type
+FROM system.information_schema.tables
+WHERE
+  (
+    table_catalog = 'analytics' AND table_schema = 'sqlmesh__default'
+  )
+  AND table_name IN ('fx_stg_events__1065515374') (base.py:2466)
+2025-11-10 17:51:34,943 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Evaluating snapshot SnapshotId<"fx_stg_events": 3282432015> (evaluator.py:701)
+2025-11-10 17:51:34,944 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting data for snapshot SnapshotId<"fx_stg_events": 3282432015> (evaluator.py:910)
+2025-11-10 17:51:34,952 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting batch (2025-09-14 00:00:00, 2025-11-10 00:00:00) into sqlmesh__default.fx_stg_events__1065515374' (evaluator.py:940)
+2025-11-10 17:51:34,954 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 318301b6d5e64435bc2399fd6dd11147 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-11-10 17:51:34,957 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 318301b6d5e64435bc2399fd6dd11147 */ SELECT
+  table_name AS name,
+  table_schema AS schema,
+  CASE table_type
+    WHEN 'BASE TABLE'
+    THEN 'table'
+    WHEN 'VIEW'
+    THEN 'view'
+    WHEN 'LOCAL TEMPORARY'
+    THEN 'table'
+  END AS type
+FROM system.information_schema.tables
+WHERE
+  (
+    table_catalog = 'analytics' AND table_schema = 'sqlmesh__default'
+  )
+  AND table_name IN ('fx_stg_events__1065515374') (base.py:2466)
+2025-11-10 17:51:34,964 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 318301b6d5e64435bc2399fd6dd11147 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-11-10 17:51:34,966 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 318301b6d5e64435bc2399fd6dd11147 */ SELECT
+  type
+FROM DUCKDB_DATABASES()
+WHERE
+  database_name = 'analytics' (base.py:2466)
+2025-11-10 17:51:34,970 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 318301b6d5e64435bc2399fd6dd11147 */ CREATE OR REPLACE TABLE "sqlmesh__default"."fx_stg_events__1065515374" AS
+SELECT
+  CAST("execution_date" AS DATE) AS "execution_date",
+  CAST("base" AS TEXT) AS "base",
+  CAST("united_states_dollars" AS DECIMAL(18, 3)) AS "united_states_dollars",
+  CAST("great_british_pounds" AS DECIMAL(18, 3)) AS "great_british_pounds",
+  CAST("canadian_dollars" AS DECIMAL(18, 3)) AS "canadian_dollars",
+  CAST("nigerian_naira" AS DECIMAL(18, 3)) AS "nigerian_naira",
+  CAST("retrieved_at" AS TIMESTAMP) AS "retrieved_at"
+FROM (
+  SELECT
+    "exchange_rates"."execution_date" AS "execution_date",
+    "exchange_rates"."base" AS "base",
+    "exchange_rates"."united_states_dollars" AS "united_states_dollars",
+    "exchange_rates"."great_british_pounds" AS "great_british_pounds",
+    "exchange_rates"."canadian_dollars" AS "canadian_dollars",
+    "exchange_rates"."nigerian_naira" AS "nigerian_naira",
+    "exchange_rates"."retrieved_at" AS "retrieved_at"
+  FROM "exchange_rates" AS "exchange_rates"
+) AS "_subquery" (base.py:2466)
+2025-11-10 17:51:35,527 - MainThread - sqlmesh.core.state_sync.db.facade - INFO - Adding interval (2025-09-14 00:00:00, 2025-11-10 00:00:00) for snapshot SnapshotId<"fx_stg_events": 3282432015> (facade.py:622)
+2025-11-10 17:51:35,528 - MainThread - sqlmesh.core.state_sync.db.interval - INFO - Pushing intervals for snapshot SnapshotId<"fx_stg_events": 3282432015> (interval.py:214)
+2025-11-10 17:51:37,549 - MainThread - sqlmesh.core.plan.evaluator - INFO - Evaluating plan stage EnvironmentRecordUpdateStage (evaluator.py:125)
+2025-11-10 17:51:37,550 - MainThread - sqlmesh.core.state_sync.db.facade - INFO - Promoting environment 'dev' (facade.py:165)
+2025-11-10 17:51:40,836 - MainThread - sqlmesh.core.plan.evaluator - INFO - Evaluating plan stage VirtualLayerUpdateStage (evaluator.py:125)
+2025-11-10 17:51:40,842 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Creating schema 'default__dev' (evaluator.py:1360)
+2025-11-10 17:51:40,843 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 318301b6d5e64435bc2399fd6dd11147 */ CREATE SCHEMA IF NOT EXISTS "default__dev" (base.py:2466)
+2025-11-10 17:51:41,419 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Updating view 'default__dev.fx_stg_events' to point at table 'sqlmesh__default.fx_stg_events__1065515374' (evaluator.py:1732)
+2025-11-10 17:51:41,421 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 318301b6d5e64435bc2399fd6dd11147 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-11-10 17:51:41,425 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 318301b6d5e64435bc2399fd6dd11147 */ SELECT
+  table_name AS name,
+  table_schema AS schema,
+  CASE table_type
+    WHEN 'BASE TABLE'
+    THEN 'table'
+    WHEN 'VIEW'
+    THEN 'view'
+    WHEN 'LOCAL TEMPORARY'
+    THEN 'table'
+  END AS type
+FROM system.information_schema.tables
+WHERE
+  (
+    table_catalog = 'analytics' AND table_schema = 'default__dev'
+  )
+  AND table_name IN ('fx_stg_events') (base.py:2466)
+2025-11-10 17:51:41,432 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 318301b6d5e64435bc2399fd6dd11147 */ CREATE OR REPLACE VIEW "default__dev"."fx_stg_events" AS
+SELECT
+  *
+FROM "sqlmesh__default"."fx_stg_events__1065515374" (base.py:2466)
+2025-11-10 17:51:41,947 - MainThread - sqlmesh.core.plan.evaluator - INFO - Evaluating plan stage FinalizeEnvironmentStage (evaluator.py:125)
+2025-11-10 17:51:41,947 - MainThread - sqlmesh.core.state_sync.db.environment - INFO - Finalizing environment 'dev' (environment.py:141)
+2025-11-10 17:51:42,558 - MainThread - root - INFO - Shutting down the event dispatcher (dispatcher.py:159)

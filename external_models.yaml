@@ -1,0 +1,20 @@
+- name: exchange_rates
+  description: Table containing daily exchange rate data from MotherDuck
+  columns:
+    execution_date: date
+    base: varchar
+    united_states_dollars: decimal
+    great_british_pounds: decimal
+    canadian_dollars: decimal
+    nigerian_naira: decimal
+    retrieved_at: timestamp
+- name: '"exchange_rates"'
+  columns:
+    execution_date: DATE
+    base: TEXT
+    united_states_dollars: DECIMAL(18, 3)
+    great_british_pounds: DECIMAL(18, 3)
+    canadian_dollars: DECIMAL(18, 3)
+    nigerian_naira: DECIMAL(18, 3)
+    retrieved_at: TIMESTAMP
+  gateway: motherduck

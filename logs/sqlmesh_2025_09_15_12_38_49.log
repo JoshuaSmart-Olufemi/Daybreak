@@ -1,2 +1,0 @@
-2025-09-15 12:38:52,509 - MainThread - sqlmesh.core.config.connection - INFO - Creating new DuckDB adapter for in-memory database (connection.py:483)
-2025-09-15 12:39:57,156 - MainThread - root - INFO - Shutting down the event dispatcher (dispatcher.py:159)
