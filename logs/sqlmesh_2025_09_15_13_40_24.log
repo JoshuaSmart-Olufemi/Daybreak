@@ -1,0 +1,333 @@
+2025-09-15 13:40:24,256 - MainThread - dotenv.main - WARNING - python-dotenv could not parse statement starting at line 1 (main.py:27)
+2025-09-15 13:40:24,583 - MainThread - sqlmesh.core.config.connection - INFO - Creating new DuckDB adapter for data files: {'md:analytics?motherduck_token=*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************'} (connection.py:489)
+2025-09-15 13:40:25,052 - MainThread - sqlmesh.core.config.connection - INFO - Creating new DuckDB adapter for in-memory database (connection.py:491)
+2025-09-15 13:40:25,111 - MainThread - sqlmesh.core.config.connection - INFO - Using existing DuckDB adapter due to overlapping data file: md:analytics?motherduck_token=************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************* (connection.py:479)
+2025-09-15 13:40:25,111 - MainThread - sqlmesh.core.console - WARNING - The motherduck engine is not recommended for storing SQLMesh state in production deployments. Please see https://sqlmesh.readthedocs.io/en/stable/guides/configuration/#state-connection for a list of recommended engines and more information. (console.py:2260)
+2025-09-15 13:40:33,222 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0000_baseline' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0000_baseline.py'> (migrator.py:186)
+2025-09-15 13:40:36,168 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0061_mysql_fix_blob_text_type' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0061_mysql_fix_blob_text_type.py'> (migrator.py:186)
+2025-09-15 13:40:36,168 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0062_add_model_gateway' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0062_add_model_gateway.py'> (migrator.py:186)
+2025-09-15 13:40:36,169 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0063_change_signals' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0063_change_signals.py'> (migrator.py:186)
+2025-09-15 13:40:36,169 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0064_join_when_matched_strings' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0064_join_when_matched_strings.py'> (migrator.py:186)
+2025-09-15 13:40:36,170 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0065_add_model_optimize' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0065_add_model_optimize.py'> (migrator.py:186)
+2025-09-15 13:40:36,170 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0066_add_auto_restatements' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0066_add_auto_restatements.py'> (migrator.py:186)
+2025-09-15 13:40:37,171 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0067_add_tsql_date_full_precision' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0067_add_tsql_date_full_precision.py'> (migrator.py:186)
+2025-09-15 13:40:37,172 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0068_include_unrendered_query_in_metadata_hash' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0068_include_unrendered_query_in_metadata_hash.py'> (migrator.py:186)
+2025-09-15 13:40:37,173 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0069_update_dev_table_suffix' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0069_update_dev_table_suffix.py'> (migrator.py:186)
+2025-09-15 13:40:37,173 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0070_include_grains_in_metadata_hash' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0070_include_grains_in_metadata_hash.py'> (migrator.py:186)
+2025-09-15 13:40:37,173 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0071_add_dev_version_to_intervals' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0071_add_dev_version_to_intervals.py'> (migrator.py:186)
+2025-09-15 13:40:37,667 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0072_add_environment_statements' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0072_add_environment_statements.py'> (migrator.py:186)
+2025-09-15 13:40:38,183 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0073_remove_symbolic_disable_restatement' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0073_remove_symbolic_disable_restatement.py'> (migrator.py:186)
+2025-09-15 13:40:38,184 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0074_add_partition_by_time_column_property' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0074_add_partition_by_time_column_property.py'> (migrator.py:186)
+2025-09-15 13:40:38,184 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0075_remove_validate_query' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0075_remove_validate_query.py'> (migrator.py:186)
+2025-09-15 13:40:38,185 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0076_add_cron_tz' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0076_add_cron_tz.py'> (migrator.py:186)
+2025-09-15 13:40:38,185 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0077_fix_column_type_hash_calculation' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0077_fix_column_type_hash_calculation.py'> (migrator.py:186)
+2025-09-15 13:40:38,186 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0078_warn_if_non_migratable_python_env' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0078_warn_if_non_migratable_python_env.py'> (migrator.py:186)
+2025-09-15 13:40:38,186 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0079_add_gateway_managed_property' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0079_add_gateway_managed_property.py'> (migrator.py:186)
+2025-09-15 13:40:38,680 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0080_add_batch_size_to_scd_type_2_models' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0080_add_batch_size_to_scd_type_2_models.py'> (migrator.py:186)
+2025-09-15 13:40:38,681 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0081_update_partitioned_by' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0081_update_partitioned_by.py'> (migrator.py:186)
+2025-09-15 13:40:38,682 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0082_warn_if_incorrectly_duplicated_statements' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0082_warn_if_incorrectly_duplicated_statements.py'> (migrator.py:186)
+2025-09-15 13:40:38,682 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0083_use_sql_for_scd_time_data_type_data_hash' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0083_use_sql_for_scd_time_data_type_data_hash.py'> (migrator.py:186)
+2025-09-15 13:40:38,683 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0084_normalize_quote_when_matched_and_merge_filter' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0084_normalize_quote_when_matched_and_merge_filter.py'> (migrator.py:186)
+2025-09-15 13:40:38,683 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0085_deterministic_repr' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0085_deterministic_repr.py'> (migrator.py:186)
+2025-09-15 13:40:38,684 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0086_check_deterministic_bug' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0086_check_deterministic_bug.py'> (migrator.py:186)
+2025-09-15 13:40:38,684 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0087_normalize_blueprint_variables' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0087_normalize_blueprint_variables.py'> (migrator.py:186)
+2025-09-15 13:40:38,685 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0088_warn_about_variable_python_env_diffs' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0088_warn_about_variable_python_env_diffs.py'> (migrator.py:186)
+2025-09-15 13:40:38,686 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0089_add_virtual_environment_mode' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0089_add_virtual_environment_mode.py'> (migrator.py:186)
+2025-09-15 13:40:38,687 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0090_add_forward_only_column' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0090_add_forward_only_column.py'> (migrator.py:186)
+2025-09-15 13:40:39,241 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0091_on_additive_change' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0091_on_additive_change.py'> (migrator.py:186)
+2025-09-15 13:40:39,242 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0092_warn_about_dbt_data_type_diff' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0092_warn_about_dbt_data_type_diff.py'> (migrator.py:186)
+2025-09-15 13:40:39,242 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0093_use_raw_sql_in_fingerprint' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0093_use_raw_sql_in_fingerprint.py'> (migrator.py:186)
+2025-09-15 13:40:39,243 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0094_add_dev_version_and_fingerprint_columns' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0094_add_dev_version_and_fingerprint_columns.py'> (migrator.py:186)
+2025-09-15 13:40:40,528 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0095_warn_about_dbt_raw_sql_diff' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0095_warn_about_dbt_raw_sql_diff.py'> (migrator.py:186)
+2025-09-15 13:40:40,529 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0096_remove_plan_dags_table' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0096_remove_plan_dags_table.py'> (migrator.py:186)
+2025-09-15 13:40:40,758 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Applying migration <module 'sqlmesh.migrations.v0097_add_dbt_name_in_node' from '/home/josh/live/lib/python3.10/site-packages/sqlmesh/migrations/v0097_add_dbt_name_in_node.py'> (migrator.py:186)
+2025-09-15 13:40:41,007 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Fetching environments (migrator.py:208)
+2025-09-15 13:40:41,240 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - Migrating snapshot rows... (migrator.py:225)
+2025-09-15 13:40:41,244 - MainThread - sqlmesh.core.state_sync.db.migrator - INFO - No changes to snapshots detected (migrator.py:218)
+2025-09-15 13:41:08,743 - MainThread - sqlmesh.core.plan.evaluator - INFO - Evaluating plan stage CreateSnapshotRecordsStage (evaluator.py:125)
+2025-09-15 13:41:10,710 - MainThread - sqlmesh.core.plan.evaluator - INFO - Evaluating plan stage PhysicalLayerSchemaCreationStage (evaluator.py:125)
+2025-09-15 13:41:10,714 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Creating schema 'analytics.sqlmesh__sqlmesh_example' (evaluator.py:1360)
+2025-09-15 13:41:10,716 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ CREATE SCHEMA IF NOT EXISTS "analytics"."sqlmesh__sqlmesh_example" (base.py:2466)
+2025-09-15 13:41:11,205 - MainThread - sqlmesh.core.plan.evaluator - INFO - Evaluating plan stage BackfillStage (evaluator.py:125)
+2025-09-15 13:41:11,214 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Listing data objects in schema analytics.sqlmesh__sqlmesh_example (evaluator.py:1463)
+2025-09-15 13:41:11,215 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-09-15 13:41:11,217 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-09-15 13:41:11,220 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  table_name AS name,
+  table_schema AS schema,
+  CASE table_type
+    WHEN 'BASE TABLE'
+    THEN 'table'
+    WHEN 'VIEW'
+    THEN 'view'
+    WHEN 'LOCAL TEMPORARY'
+    THEN 'table'
+  END AS type
+FROM system.information_schema.tables
+WHERE
+  (
+    table_catalog = 'analytics' AND table_schema = 'sqlmesh__sqlmesh_example'
+  )
+  AND table_name IN (
+    'sqlmesh_example__full_model__3532441660',
+    'sqlmesh_example__incremental_model__2019538',
+    'sqlmesh_example__seed_model__3896887493'
+  ) (base.py:2466)
+2025-09-15 13:41:11,233 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Evaluating snapshot SnapshotId<"analytics"."sqlmesh_example"."seed_model": 2901089666> (evaluator.py:701)
+2025-09-15 13:41:11,236 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Creating table 'analytics.sqlmesh__sqlmesh_example.sqlmesh_example__seed_model__3896887493' (evaluator.py:1768)
+2025-09-15 13:41:11,237 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-09-15 13:41:11,238 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  type
+FROM DUCKDB_DATABASES()
+WHERE
+  database_name = 'analytics' (base.py:2466)
+2025-09-15 13:41:11,240 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ CREATE TABLE IF NOT EXISTS "analytics"."sqlmesh__sqlmesh_example"."sqlmesh_example__seed_model__3896887493" (
+  "id" INT,
+  "item_id" INT,
+  "event_date" DATE
+) (base.py:2466)
+2025-09-15 13:41:11,279 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-09-15 13:41:11,282 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-09-15 13:41:11,287 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  table_name AS name,
+  table_schema AS schema,
+  CASE table_type
+    WHEN 'BASE TABLE'
+    THEN 'table'
+    WHEN 'VIEW'
+    THEN 'view'
+    WHEN 'LOCAL TEMPORARY'
+    THEN 'table'
+  END AS type
+FROM system.information_schema.tables
+WHERE
+  (
+    table_catalog = 'analytics' AND table_schema = 'sqlmesh__sqlmesh_example'
+  )
+  AND table_name IN ('sqlmesh_example__seed_model__3896887493') (base.py:2466)
+2025-09-15 13:41:11,786 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-09-15 13:41:11,788 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  type
+FROM DUCKDB_DATABASES()
+WHERE
+  database_name = 'analytics' (base.py:2466)
+2025-09-15 13:41:11,790 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ CREATE OR REPLACE TABLE "analytics"."sqlmesh__sqlmesh_example"."sqlmesh_example__seed_model__3896887493" AS
+SELECT
+  CAST("id" AS INT) AS "id",
+  CAST("item_id" AS INT) AS "item_id",
+  CAST("event_date" AS DATE) AS "event_date"
+FROM (
+  SELECT
+    "id",
+    "item_id",
+    "event_date"
+  FROM "analytics"."sqlmesh__sqlmesh_example"."__temp_sqlmesh_example__seed_model__3896887493_edz6szq4"
+) AS "_subquery" (base.py:2466)
+2025-09-15 13:41:12,294 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ DROP TABLE IF EXISTS "analytics"."sqlmesh__sqlmesh_example"."__temp_sqlmesh_example__seed_model__3896887493_edz6szq4" (base.py:2466)
+2025-09-15 13:41:12,794 - MainThread - sqlmesh.core.state_sync.db.facade - INFO - Adding interval (2025-09-14 00:00:00, 2025-09-15 00:00:00) for snapshot SnapshotId<"analytics"."sqlmesh_example"."seed_model": 2901089666> (facade.py:622)
+2025-09-15 13:41:12,795 - MainThread - sqlmesh.core.state_sync.db.interval - INFO - Pushing intervals for snapshot SnapshotId<"analytics"."sqlmesh_example"."seed_model": 2901089666> (interval.py:214)
+2025-09-15 13:41:14,274 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Creating a physical table for snapshot SnapshotId<"analytics"."sqlmesh_example"."incremental_model": 2708261412> (evaluator.py:838)
+2025-09-15 13:41:14,293 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Creating table 'analytics.sqlmesh__sqlmesh_example.sqlmesh_example__incremental_model__2019538' (evaluator.py:1768)
+2025-09-15 13:41:14,295 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-09-15 13:41:14,299 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  type
+FROM DUCKDB_DATABASES()
+WHERE
+  database_name = 'analytics' (base.py:2466)
+2025-09-15 13:41:14,303 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ CREATE TABLE IF NOT EXISTS "analytics"."sqlmesh__sqlmesh_example"."sqlmesh_example__incremental_model__2019538" (
+  "id" INT,
+  "item_id" INT,
+  "event_date" DATE
+) (base.py:2466)
+2025-09-15 13:41:14,784 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Dry running model 'sqlmesh_example.incremental_model' (evaluator.py:1790)
+2025-09-15 13:41:14,786 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  "seed_model"."id" AS "id",
+  "seed_model"."item_id" AS "item_id",
+  "seed_model"."event_date" AS "event_date"
+FROM "analytics"."sqlmesh__sqlmesh_example"."sqlmesh_example__seed_model__3896887493" AS "seed_model"
+WHERE
+  (
+    "seed_model"."event_date" <= CAST('1970-01-01' AS DATE)
+    AND "seed_model"."event_date" >= CAST('1970-01-01' AS DATE)
+  )
+  AND FALSE
+LIMIT 0 (base.py:2466)
+2025-09-15 13:41:14,788 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Evaluating snapshot SnapshotId<"analytics"."sqlmesh_example"."incremental_model": 2708261412> (evaluator.py:701)
+2025-09-15 13:41:14,789 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting data for snapshot SnapshotId<"analytics"."sqlmesh_example"."incremental_model": 2708261412> (evaluator.py:910)
+2025-09-15 13:41:14,798 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting batch (2020-01-01 00:00:00, 2025-09-15 00:00:00) into analytics.sqlmesh__sqlmesh_example.sqlmesh_example__incremental_model__2019538' (evaluator.py:940)
+2025-09-15 13:41:14,800 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ DELETE FROM "analytics"."sqlmesh__sqlmesh_example"."sqlmesh_example__incremental_model__2019538"
+WHERE
+  "event_date" BETWEEN CAST('2020-01-01' AS DATE) AND CAST('2025-09-14' AS DATE) (base.py:2466)
+2025-09-15 13:41:15,050 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ INSERT INTO "analytics"."sqlmesh__sqlmesh_example"."sqlmesh_example__incremental_model__2019538" (
+  "id",
+  "item_id",
+  "event_date"
+)
+SELECT
+  "id",
+  "item_id",
+  "event_date"
+FROM (
+  SELECT
+    "seed_model"."id" AS "id",
+    "seed_model"."item_id" AS "item_id",
+    "seed_model"."event_date" AS "event_date"
+  FROM "analytics"."sqlmesh__sqlmesh_example"."sqlmesh_example__seed_model__3896887493" AS "seed_model"
+  WHERE
+    "seed_model"."event_date" <= CAST('2025-09-14' AS DATE)
+    AND "seed_model"."event_date" >= CAST('2020-01-01' AS DATE)
+) AS "_subquery"
+WHERE
+  "event_date" BETWEEN CAST('2020-01-01' AS DATE) AND CAST('2025-09-14' AS DATE) (base.py:2466)
+2025-09-15 13:41:15,365 - MainThread - sqlmesh.core.state_sync.db.facade - INFO - Adding interval (2020-01-01 00:00:00, 2025-09-15 00:00:00) for snapshot SnapshotId<"analytics"."sqlmesh_example"."incremental_model": 2708261412> (facade.py:622)
+2025-09-15 13:41:15,365 - MainThread - sqlmesh.core.state_sync.db.interval - INFO - Pushing intervals for snapshot SnapshotId<"analytics"."sqlmesh_example"."incremental_model": 2708261412> (interval.py:214)
+2025-09-15 13:41:16,834 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Evaluating snapshot SnapshotId<"analytics"."sqlmesh_example"."full_model": 1557290894> (evaluator.py:701)
+2025-09-15 13:41:16,835 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting data for snapshot SnapshotId<"analytics"."sqlmesh_example"."full_model": 1557290894> (evaluator.py:910)
+2025-09-15 13:41:16,841 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Inserting batch (2025-09-14 00:00:00, 2025-09-15 00:00:00) into analytics.sqlmesh__sqlmesh_example.sqlmesh_example__full_model__3532441660' (evaluator.py:940)
+2025-09-15 13:41:16,842 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-09-15 13:41:16,844 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-09-15 13:41:16,846 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  table_name AS name,
+  table_schema AS schema,
+  CASE table_type
+    WHEN 'BASE TABLE'
+    THEN 'table'
+    WHEN 'VIEW'
+    THEN 'view'
+    WHEN 'LOCAL TEMPORARY'
+    THEN 'table'
+  END AS type
+FROM system.information_schema.tables
+WHERE
+  (
+    table_catalog = 'analytics' AND table_schema = 'sqlmesh__sqlmesh_example'
+  )
+  AND table_name IN ('sqlmesh_example__full_model__3532441660') (base.py:2466)
+2025-09-15 13:41:16,851 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-09-15 13:41:16,853 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  type
+FROM DUCKDB_DATABASES()
+WHERE
+  database_name = 'analytics' (base.py:2466)
+2025-09-15 13:41:16,856 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ CREATE OR REPLACE TABLE "analytics"."sqlmesh__sqlmesh_example"."sqlmesh_example__full_model__3532441660" AS
+SELECT
+  CAST("item_id" AS INT) AS "item_id",
+  CAST("num_orders" AS BIGINT) AS "num_orders"
+FROM (
+  SELECT
+    "incremental_model"."item_id" AS "item_id",
+    COUNT(DISTINCT "incremental_model"."id") AS "num_orders"
+  FROM "analytics"."sqlmesh__sqlmesh_example"."sqlmesh_example__incremental_model__2019538" AS "incremental_model"
+  GROUP BY
+    "incremental_model"."item_id"
+) AS "_subquery" (base.py:2466)
+2025-09-15 13:41:17,348 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Auditing snapshot SnapshotId<"analytics"."sqlmesh_example"."full_model": 1557290894> (evaluator.py:593)
+2025-09-15 13:41:17,350 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ DESCRIBE "analytics"."sqlmesh__sqlmesh_example"."sqlmesh_example__full_model__3532441660" (base.py:2466)
+2025-09-15 13:41:17,356 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  COUNT(*)
+FROM (
+  SELECT
+    *
+  FROM "analytics"."sqlmesh__sqlmesh_example"."sqlmesh_example__full_model__3532441660" AS "sqlmesh_example__full_model__3532441660"
+  WHERE
+    "item_id" < 0
+) AS "audit" (base.py:2466)
+2025-09-15 13:41:17,588 - MainThread - sqlmesh.core.state_sync.db.facade - INFO - Adding interval (2025-09-14 00:00:00, 2025-09-15 00:00:00) for snapshot SnapshotId<"analytics"."sqlmesh_example"."full_model": 1557290894> (facade.py:622)
+2025-09-15 13:41:17,588 - MainThread - sqlmesh.core.state_sync.db.interval - INFO - Pushing intervals for snapshot SnapshotId<"analytics"."sqlmesh_example"."full_model": 1557290894> (interval.py:214)
+2025-09-15 13:41:19,153 - MainThread - sqlmesh.core.plan.evaluator - INFO - Evaluating plan stage EnvironmentRecordUpdateStage (evaluator.py:125)
+2025-09-15 13:41:19,154 - MainThread - sqlmesh.core.state_sync.db.facade - INFO - Promoting environment 'prod' (facade.py:165)
+2025-09-15 13:41:21,568 - MainThread - sqlmesh.core.plan.evaluator - INFO - Evaluating plan stage UnpauseStage (evaluator.py:125)
+2025-09-15 13:41:22,572 - MainThread - sqlmesh.core.plan.evaluator - INFO - Evaluating plan stage VirtualLayerUpdateStage (evaluator.py:125)
+2025-09-15 13:41:22,575 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Creating schema 'analytics.sqlmesh_example' (evaluator.py:1360)
+2025-09-15 13:41:22,576 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ CREATE SCHEMA IF NOT EXISTS "analytics"."sqlmesh_example" (base.py:2466)
+2025-09-15 13:41:23,085 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Updating view 'analytics.sqlmesh_example.seed_model' to point at table 'analytics.sqlmesh__sqlmesh_example.sqlmesh_example__seed_model__3896887493' (evaluator.py:1732)
+2025-09-15 13:41:23,086 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-09-15 13:41:23,088 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-09-15 13:41:23,090 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  table_name AS name,
+  table_schema AS schema,
+  CASE table_type
+    WHEN 'BASE TABLE'
+    THEN 'table'
+    WHEN 'VIEW'
+    THEN 'view'
+    WHEN 'LOCAL TEMPORARY'
+    THEN 'table'
+  END AS type
+FROM system.information_schema.tables
+WHERE
+  (
+    table_catalog = 'analytics' AND table_schema = 'sqlmesh_example'
+  )
+  AND table_name IN ('seed_model') (base.py:2466)
+2025-09-15 13:41:23,094 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ CREATE OR REPLACE VIEW "analytics"."sqlmesh_example"."seed_model" AS
+SELECT
+  *
+FROM "analytics"."sqlmesh__sqlmesh_example"."sqlmesh_example__seed_model__3896887493" (base.py:2466)
+2025-09-15 13:41:23,583 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Updating view 'analytics.sqlmesh_example.incremental_model' to point at table 'analytics.sqlmesh__sqlmesh_example.sqlmesh_example__incremental_model__2019538' (evaluator.py:1732)
+2025-09-15 13:41:23,585 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-09-15 13:41:23,586 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-09-15 13:41:23,588 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  table_name AS name,
+  table_schema AS schema,
+  CASE table_type
+    WHEN 'BASE TABLE'
+    THEN 'table'
+    WHEN 'VIEW'
+    THEN 'view'
+    WHEN 'LOCAL TEMPORARY'
+    THEN 'table'
+  END AS type
+FROM system.information_schema.tables
+WHERE
+  (
+    table_catalog = 'analytics' AND table_schema = 'sqlmesh_example'
+  )
+  AND table_name IN ('incremental_model') (base.py:2466)
+2025-09-15 13:41:23,593 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ CREATE OR REPLACE VIEW "analytics"."sqlmesh_example"."incremental_model" AS
+SELECT
+  *
+FROM "analytics"."sqlmesh__sqlmesh_example"."sqlmesh_example__incremental_model__2019538" (base.py:2466)
+2025-09-15 13:41:24,090 - MainThread - sqlmesh.core.snapshot.evaluator - INFO - Updating view 'analytics.sqlmesh_example.full_model' to point at table 'analytics.sqlmesh__sqlmesh_example.sqlmesh_example__full_model__3532441660' (evaluator.py:1732)
+2025-09-15 13:41:24,092 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-09-15 13:41:24,094 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  CURRENT_CATALOG() (base.py:2466)
+2025-09-15 13:41:24,097 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ SELECT
+  table_name AS name,
+  table_schema AS schema,
+  CASE table_type
+    WHEN 'BASE TABLE'
+    THEN 'table'
+    WHEN 'VIEW'
+    THEN 'view'
+    WHEN 'LOCAL TEMPORARY'
+    THEN 'table'
+  END AS type
+FROM system.information_schema.tables
+WHERE
+  (
+    table_catalog = 'analytics' AND table_schema = 'sqlmesh_example'
+  )
+  AND table_name IN ('full_model') (base.py:2466)
+2025-09-15 13:41:24,100 - MainThread - sqlmesh.core.engine_adapter.base - INFO - Executing SQL: /* SQLMESH_PLAN: 1f262f129162490894646ed9c8f452e4 */ CREATE OR REPLACE VIEW "analytics"."sqlmesh_example"."full_model" AS
+SELECT
+  *
+FROM "analytics"."sqlmesh__sqlmesh_example"."sqlmesh_example__full_model__3532441660" (base.py:2466)
+2025-09-15 13:41:24,596 - MainThread - sqlmesh.core.plan.evaluator - INFO - Evaluating plan stage FinalizeEnvironmentStage (evaluator.py:125)
+2025-09-15 13:41:24,597 - MainThread - sqlmesh.core.state_sync.db.environment - INFO - Finalizing environment 'prod' (environment.py:141)
+2025-09-15 13:41:25,072 - MainThread - root - INFO - Shutting down the event dispatcher (dispatcher.py:159)

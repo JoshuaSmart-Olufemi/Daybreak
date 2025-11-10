@@ -1,0 +1,40 @@
+# --- Gateway Connection ---
+gateways:
+  motherduck:
+    connection:
+      # For more information on configuring the connection to your execution engine, visit:
+      # https://sqlmesh.readthedocs.io/en/stable/reference/configuration/#connection
+      # https://sqlmesh.readthedocs.io/en/stable/integrations/engines/motherduck/#connection-options
+      type: motherduck
+      # concurrent_tasks: 1
+      # register_comments: True
+      # pre_ping: False
+      pretty_sql: True
+      # schema_differ_overrides: 
+      database: analytics
+      # catalogs: 
+      # extensions: 
+      # connector_config: 
+      # secrets: 
+      # filesystems: 
+      token: {{ env_var('MOTHERDUCK_TOKEN') }}
+
+default_gateway: motherduck
+
+# --- Model Defaults ---
+# https://sqlmesh.readthedocs.io/en/stable/reference/model_configuration/#model-defaults
+
+model_defaults:
+  dialect: duckdb
+  start: 2025-09-14 # Start date for backfill history
+  cron: '@daily'    # Run models daily at 12am UTC (can override per model)
+
+# --- Linting Rules ---
+# Enforce standards for your team
+# https://sqlmesh.readthedocs.io/en/stable/guides/linter/
+
+linter:
+  enabled: true
+  rules:
+    - ambiguousorinvalidcolumn
+    - invalidselectstarexpansion
